@@ -1,0 +1,83 @@
+.mainpage {
+    padding-top: 69px;
+    padding-bottom: 96px;
+    background-color: var(--light_pink);
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__poster {
+        position: relative;
+        width: 542px;
+        height: 292px;
+        margin-bottom: 60px;
+        z-index: 1;
+    }
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--black);
+        margin-bottom: 48px;
+    }
+    &__parrotbgWrapper {
+        position: relative;
+        width: 458px;
+        height: 565px;
+    }
+
+    &__redleaf {
+        width: 41px;
+        height: 47px;
+        position: absolute;
+        top: 0;
+        right: 169px;
+        transform: rotate(90deg);
+    }
+    &__purpleleaf {
+        position: absolute;
+        width: 100px;
+        height: 128px;
+        top: 22px;
+        right: 10px;
+    }
+    &__orangeleaf {
+        position: absolute;
+        top: 195px;
+        right: 48px;
+        width: 35px;
+        height: 53px;
+        transform: rotate(-45deg);
+    }
+    &__purpleleaf_small {
+        position: absolute;
+        width: 40px;
+        height: 49px;
+        bottom: 170px;
+        right: 100px;
+    }
+    &__greenleaf {
+        position: absolute;
+        bottom: 130px;
+        right: 150px;
+        width: 30px;
+        height: 35px;
+        transform: rotate(60deg);
+    }
+    &__parrotbg {
+        position: absolute;
+        width: 357px;
+        height: 494px;
+        top: 71px;
+        left: 0;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+.column {
+    flex: 1 1 calc(50%);
+}
