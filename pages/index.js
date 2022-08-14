@@ -1,7 +1,8 @@
 import Head from "next/head"
+import EnviromentSlider from "../components/EnviromentSlider/EnviromentSlider"
 import Header from "../components/Header/Header"
 import MainScreen from "../components/MainScreen/MainScreen"
-import Script from "next/script"
+import TravelSlider from "../components/TravelSlider/TravelSlider"
 
 export default function Home() {
     return (
@@ -17,6 +18,8 @@ export default function Home() {
             <Header />
             <main>
                 <MainScreen />
+                <TravelSlider />
+                <EnviromentSlider />
             </main>
         </div>
     )

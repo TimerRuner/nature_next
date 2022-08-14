@@ -1,0 +1,13 @@
+.enviromentSlider {
+    background-color: var(--orange);
+    min-height: 655px;
+    display: flex;
+    align-items: center;
+    margin: 0 -240px;
+    @media all and (max-width: 992px) {
+        margin: 0;
+    }
+    @media all and (max-width: 568px) {
+        min-height: 500px;
+    }
+}

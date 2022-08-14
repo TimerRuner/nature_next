@@ -1,0 +1,10 @@
+.prewArrow {
+    position: absolute;
+    width: 24px;
+    height: 44px;
+    left: 64px;
+    z-index: 1;
+    @media all and (max-width: 1400px) {
+        left: 0;
+    }
+}

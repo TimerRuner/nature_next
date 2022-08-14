@@ -87,6 +87,9 @@
         padding: 0 20px;
         align-self: center;
         margin: 0 auto;
+        height: 100%;
+        margin-bottom: 20px;
+        overflow-y: auto;
     }
     &__list {
         display: flex;
