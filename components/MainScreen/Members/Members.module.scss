@@ -1,0 +1,62 @@
+.members {
+    position: absolute;
+    height: 320px;
+    width: 272px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px;
+    left: 38px;
+    bottom: -70px;
+    background-size: contain;
+    @media all and (max-width: 1200px) {
+        height: 254px;
+        width: 216px;
+        left: 63px;
+        bottom: -10px;
+    }
+    @media all and (max-width: 992px) {
+        left: 30px;
+        bottom: 80px;
+    }
+    @media all and (max-width: 568px) {
+        left: 75px;
+        bottom: 90px;
+    }
+    &__icon {
+        position: absolute;
+        width: 48px;
+        height: 56px;
+        top: 32px;
+        left: 32px;
+        @media all and (max-width: 1200px) {
+            width: 33px;
+            height: 38px;
+        }
+    }
+    &__content {
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: var(--white);
+            margin-bottom: 15px;
+            @media all and (max-width: 1200px) {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__count {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 80px;
+        color: var(--white);
+        @media all and (max-width: 1200px) {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 30px;
+        }
+    }
+}

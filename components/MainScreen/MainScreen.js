@@ -14,6 +14,8 @@ import {
 import { parot_bg } from "../../helpers/imgSrc"
 import SearchInput from "../UI/SearchInput/SearchInput"
 import userParallax from "../../hooks/useParallax"
+import Members from "./Members/Members"
+import { members } from "../../helpers/imgSrc"
 
 const MainScreen = () => {
     const parallaxRef = useRef()
@@ -42,7 +44,7 @@ const MainScreen = () => {
                             </p>
                             <SearchInput />
                         </div>
-                        <div className={styles.column}>
+                        <div className={`${styles.column} ${styles.graphic}`}>
                             <div className={styles.mainpage__parrotbgWrapper}>
                                 <div
                                     className={styles.mainpage__redleaf}
@@ -120,6 +122,7 @@ const MainScreen = () => {
                                     />
                                 </div>
                             </div>
+                            <Members count={"29 128"} bg={members} />
                         </div>
                     </div>
                 </div>

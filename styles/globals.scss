@@ -34,6 +34,7 @@ section {
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 body {
     line-height: 1;
@@ -78,6 +79,9 @@ h6 {
 main {
     min-height: 100vh;
     margin-top: 112px;
+    @media all and (max-width: 992px) {
+        margin-top: 101px;
+    }
 }
 
 :root {
