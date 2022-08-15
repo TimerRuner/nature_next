@@ -2,6 +2,8 @@ import React from "react"
 import styles from "./FAQ.module.scss"
 import Button from "../UI/Button/Button"
 import Container from "../Container/Container"
+import { faqSpoillers } from "../../helpers/faqSpoillers"
+import Spoiller from "./Spoiller/Spoiller"
 
 const FAQ = () => {
     return (
@@ -17,29 +19,9 @@ const FAQ = () => {
                     <Button title="Contact us" width={166} height={48} />
                 </div>
                 <div className={styles.faq__spoillers}>
-                    <div className={styles.spoiller}>
-                        <input type="checkbox" id="spoiller1" />
-                        <label htmlFor="spoiller1">
-                            <div className={styles.spoiller__title}>
-                                What can I do to protect our planet?
-                            </div>
-                            <div className={styles.spoiller__crossWrapper}>
-                                <span className={styles.spoiller__cross}></span>
-                            </div>
-                        </label>
-
-                        <div className={styles.spoiller__content}>
-                            <div className={styles.spoiller__row}>
-                                <div className={styles.spoiller__text}>
-                                    Not to make an open fire in nature and to
-                                    clean up litter; not to pollute open water
-                                    bodies; to switch to alternative energy
-                                    sources; to reduce the use of non-renewable
-                                    resources
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {faqSpoillers.map(({ id, title, text }) => (
+                        <Spoiller key={id} title={title} text={text} id={id} />
+                    ))}
                 </div>
             </div>
         </Container>

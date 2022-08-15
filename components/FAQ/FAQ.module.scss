@@ -2,142 +2,43 @@
     display: flex;
     margin-bottom: 192px;
     justify-content: space-between;
+    @media all and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
     &__desc {
         max-width: 480px;
+        @media all and (max-width: 992px) {
+            margin-bottom: 48px;
+            max-width: 536px;
+        }
         h2 {
             font-weight: 700;
             font-size: 40px;
             line-height: 56px;
             margin-bottom: 40px;
+            @media all and (max-width: 992px) {
+                font-weight: 700;
+                font-size: 28px;
+                margin-bottom: 20px;
+                line-height: 28px;
+            }
         }
         p {
             font-weight: 400;
             font-size: 18px;
             line-height: 32px;
             margin-bottom: 56px;
+            @media all and (max-width: 992px) {
+                font-weight: 400;
+                font-size: 15px;
+                margin-bottom: 32px;
+                line-height: 175%;
+            }
         }
     }
     &__spoillers {
         max-width: 536px;
-    }
-}
-
-.spoiller {
-    max-width: 885px;
-    min-height: 69px;
-    border-bottom: 1px solid #1e1a20;
-    &:not(:last-child) {
-        margin-bottom: 35px;
-    }
-    & > input {
-        display: none;
-        &:checked + label {
-            margin: 0 0 16px 0;
-            span.spoiller__cross {
-                &::after {
-                    opacity: 0;
-                    height: 0;
-                }
-            }
-        }
-        &:checked ~ .spoiller__content {
-            height: initial;
-            transform: scaleY(1);
-            max-height: 1000vh;
-        }
-    }
-    & > label {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin: 0 0 35px 0;
-    }
-    &__title {
-        color: #1e1a20;
-        transition: color 0.3s ease;
-        padding: 0 55px 0 0;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 34px;
-    }
-    &__crossWrapper {
-        width: 40px;
-        height: 40px;
-        background-color: var(--red);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-    }
-    &__cross {
-        display: inline-block;
-        width: 16px;
-        height: 2px;
-        background-color: var(--white);
-        transition: background-color 0.3s ease;
-        position: relative;
-        flex: 0 0 16px;
-        &:after {
-            content: "";
-            display: inline-block;
-            width: 2px;
-            height: 16px;
-            transform: translate(-50%, -50%);
-            background-color: var(--white);
-            opacity: 1;
-            transition: background-color 0.3s ease, height 0.3s ease,
-                opacity 0.3s ease;
-            position: absolute;
-            opacity: 1;
-            top: 50%;
-            left: 50%;
-        }
-    }
-    &__content {
-        transition: max-height 0.2s, transform 0.2s;
-        height: auto;
-        max-height: 0px;
-        overflow: hidden;
-        transform: scaleY(0);
-        transform-origin: top;
-        position: relative;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    &__row {
-        margin: 0 0 35px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    &__text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        max-width: 460px;
-        color: #1e1a20;
-        a {
-            font-weight: bold;
-        }
-    }
-    &__img {
-        img {
-            max-width: 100%;
-        }
-    }
-    &__drop-img {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        img {
-            margin: 0 0 10px 0;
-            &:not(:first-child) {
-                margin: 0 0 10px 10px;
-            }
-        }
     }
 }

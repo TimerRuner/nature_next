@@ -1,0 +1,59 @@
+.loginForm {
+    max-width: 422px;
+    flex: 0 1 422px;
+    min-height: 352px;
+    background-color: var(--gray);
+    padding: 40px 55px;
+    border-radius: 16px;
+    position: relative;
+    @media all and (max-width: 992px) {
+        flex: initial;
+        width: 339px;
+        height: 328px;
+        padding: 40px 24px;
+    }
+    &__redleaf {
+        position: absolute;
+        width: 73px;
+        height: 45px;
+        top: -19px;
+        right: -28px;
+        transform: rotate(-60deg);
+    }
+    &__purpleleaf {
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        top: 40px;
+        right: -14px;
+        transform: rotate(45deg);
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 56px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        background: var(--white);
+        border-radius: 40px;
+        margin-bottom: 16px;
+        height: 48px;
+        padding: 12px 24px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--dark_gray);
+    }
+    &__inputWrapper {
+        width: 100%;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+}

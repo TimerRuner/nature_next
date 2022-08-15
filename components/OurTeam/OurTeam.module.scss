@@ -1,0 +1,96 @@
+.team {
+    margin-bottom: 124px;
+    @media all and (max-width: 867px) {
+        margin-bottom: 100px;
+    }
+    &__desc {
+        margin: auto;
+        max-width: 325px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 13px;
+        text-align: center;
+    }
+    &__photos {
+        position: relative;
+    }
+    &__photosWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+        position: relative;
+        @media all and (max-width: 867px) {
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+    }
+    &__wireTop {
+        position: absolute;
+        width: 378px;
+        height: 205px;
+        top: 30px;
+        left: 20%;
+        @media all and (max-width: 867px) {
+            transform: rotate(62deg) !important;
+            top: 130px;
+            left: 45%;
+        }
+        @media all and (max-width: 568px) {
+            top: 153px;
+            left: 10%;
+        }
+    }
+    &__wireBottom {
+        position: absolute;
+        width: 378px;
+        height: 205px;
+        bottom: 19px;
+        right: 10%;
+        @media all and (max-width: 992px) {
+            right: 5%;
+            bottom: 0px;
+        }
+        @media all and (max-width: 867px) {
+            left: 10%;
+            bottom: 27%;
+            right: initial;
+            transform: rotate(109deg) !important;
+        }
+    }
+    &__photo {
+        position: relative;
+        width: 33.333%;
+        span {
+            width: 323px;
+            height: 274px;
+        }
+    }
+}
+
+.boy {
+    width: 276px;
+    height: 312px;
+}
+.girl {
+    width: 341.92px;
+    height: 291.08px;
+    transform: translateY(50%);
+    @media all and (max-width: 867px) {
+        transform: translateY(0);
+    }
+}
+.man {
+    width: 323px;
+    height: 274px;
+}

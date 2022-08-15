@@ -26,3 +26,16 @@ export const water = "/img/main_page/slider_bottom/ocean.png"
 export const forest = "/img/main_page/slider_bottom/forest.png"
 export const plastic = "/img/main_page/slider_bottom/plastic.png"
 export const energy = "/img/main_page/slider_bottom/energy.png"
+
+//! mission icons
+export const user = "/icons/main_page/analytics/user.svg"
+export const graphic = "/icons/main_page/analytics/graphic.svg"
+export const revenue = "/icons/main_page/analytics/revenue.svg"
+export const circle_bg = "/icons/main_page/analytics/bg.svg"
+
+//! team
+export const man = "/img/main_page/team/person1.png"
+export const girl = "/img/main_page/team/person2.png"
+export const boy = "/img/main_page/team/person3.png"
+export const wire_top = "/icons/main_page/team/wire_top.svg"
+export const wire_bottom = "/icons/main_page/team/wire_bottom.svg"

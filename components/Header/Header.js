@@ -30,8 +30,6 @@ const Header = () => {
                                         loader={generateUrl}
                                         src={logo_flower}
                                         alt="logo"
-                                        width={38}
-                                        height={38}
                                         layout="fill"
                                     />
                                 </div>
@@ -40,8 +38,6 @@ const Header = () => {
                                         loader={generateUrl}
                                         src={logo_text}
                                         alt="logo"
-                                        width={60}
-                                        height={16}
                                         layout="fill"
                                     />
                                 </div>

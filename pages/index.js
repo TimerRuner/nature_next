@@ -4,6 +4,9 @@ import Header from "../components/Header/Header"
 import MainScreen from "../components/MainScreen/MainScreen"
 import TravelSlider from "../components/TravelSlider/TravelSlider"
 import FAQ from "../components/FAQ/FAQ"
+import Mission from "../components/Mission/Mission"
+import GetStarted from "../components/GetStarted/GetStarted"
+import OurTeam from "../components/OurTeam/OurTeam"
 
 export default function Home() {
     return (
@@ -20,6 +23,9 @@ export default function Home() {
             <main>
                 <MainScreen />
                 <TravelSlider />
+                <OurTeam />
+                <Mission />
+                <GetStarted />
                 <FAQ />
                 <EnviromentSlider />
             </main>
