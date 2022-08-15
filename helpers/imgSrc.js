@@ -39,3 +39,14 @@ export const girl = "/img/main_page/team/person2.png"
 export const boy = "/img/main_page/team/person3.png"
 export const wire_top = "/icons/main_page/team/wire_top.svg"
 export const wire_bottom = "/icons/main_page/team/wire_bottom.svg"
+
+//! More
+export const girl_more = "/img/main_page/more/girl.png"
+export const man_more = "/img/main_page/more/man.png"
+export const play = "/icons/main_page/more/play.svg"
+export const bridge = "/img/main_page/more/bridge.png"
+
+//! Footer
+export const facebook = "/icons/footer/facebook.svg"
+export const twitter = "/icons/footer/twitter.svg"
+export const linkedin = "/icons/footer/linkedIn.svg"

@@ -7,6 +7,8 @@ import FAQ from "../components/FAQ/FAQ"
 import Mission from "../components/Mission/Mission"
 import GetStarted from "../components/GetStarted/GetStarted"
 import OurTeam from "../components/OurTeam/OurTeam"
+import More from "../components/More/More"
+import Footer from "../components/Footer/Footer"
 
 export default function Home() {
     return (
@@ -22,6 +24,7 @@ export default function Home() {
             <Header />
             <main>
                 <MainScreen />
+                <More />
                 <TravelSlider />
                 <OurTeam />
                 <Mission />
@@ -29,6 +32,7 @@ export default function Home() {
                 <FAQ />
                 <EnviromentSlider />
             </main>
+            <Footer />
         </div>
     )
 }
