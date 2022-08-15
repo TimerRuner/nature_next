@@ -88,8 +88,10 @@
         align-self: center;
         margin: 0 auto;
         height: 100%;
-        margin-bottom: 20px;
         overflow-y: auto;
+        @media all and (max-width: 992px) {
+            margin-bottom: 20px;
+        }
     }
     &__list {
         display: flex;
