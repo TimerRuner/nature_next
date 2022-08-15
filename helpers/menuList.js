@@ -3,7 +3,7 @@ export const menuList = [
     {
         id: generateId(),
         title: "Home",
-        link: "/#",
+        link: "/",
     },
     {
         id: generateId(),
