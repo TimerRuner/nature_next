@@ -3,6 +3,10 @@
     display: flex;
     align-items: flex-start;
     padding: 0 20px 50px 20px;
+    @media all and (max-width: 568px) {
+        width: 100%;
+        justify-content: flex-start;
+    }
     &__img {
         position: relative;
         width: 112px;
@@ -41,6 +45,9 @@
 .video {
     width: 173px;
     height: 112px;
+    @media all and (max-width: 568px) {
+        width: 112px;
+    }
     & span,
     & img {
         width: 100%;
