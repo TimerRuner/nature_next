@@ -3,7 +3,7 @@ const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
     env: {
-        LOCAL_URL: "http://localhost:3000",
+        LOCAL_URL: "https://nature-next-app.herokuapp.com",
     },
 }
 
