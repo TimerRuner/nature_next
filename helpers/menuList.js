@@ -3,21 +3,21 @@ export const menuList = [
     {
         id: generateId(),
         title: "Home",
-        link: "/",
+        link: "/#",
     },
     {
         id: generateId(),
         title: "Our mission",
-        link: "/",
+        link: "/#",
     },
     {
         id: generateId(),
         title: "Places",
-        link: "/",
+        link: "/#",
     },
     {
         id: generateId(),
         title: "Team",
-        link: "/",
+        link: "/#",
     },
 ]
