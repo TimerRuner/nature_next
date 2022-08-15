@@ -8,16 +8,16 @@ export const menuList = [
     {
         id: generateId(),
         title: "Our mission",
-        link: "/mission",
+        link: "/",
     },
     {
         id: generateId(),
         title: "Places",
-        link: "/places",
+        link: "/",
     },
     {
         id: generateId(),
         title: "Team",
-        link: "/team",
+        link: "/",
     },
 ]

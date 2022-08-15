@@ -22,7 +22,7 @@ const Header = () => {
         <header className={styles.header}>
             <Container>
                 <div className={styles.header__wrapper}>
-                    <Link href="/home">
+                    <Link href="/">
                         <a>
                             <div className={styles.header__logo}>
                                 <div className={styles.header__logoFlower}>
