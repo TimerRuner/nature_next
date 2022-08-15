@@ -5,6 +5,7 @@ import Container from "../Container/Container"
 
 import { facebook, linkedin, twitter } from "../../helpers/imgSrc"
 import { generateUrl } from "../../helpers/generateUrl"
+import Link from "next/link"
 
 const Footer = () => {
     return (
@@ -37,25 +38,46 @@ const Footer = () => {
                         <div className={styles.footer__content}>
                             <div className={styles.footer__social}>
                                 <div className={styles.footer__socialIcon}>
-                                    <Image
-                                        src={twitter}
-                                        layout="fill"
-                                        loader={generateUrl}
-                                    />
+                                    <Link
+                                        href="https://www.linkedin.com/in/vadym-maslovskyi/"
+                                        passHref
+                                    >
+                                        <a target="_blank">
+                                            <Image
+                                                src={twitter}
+                                                layout="fill"
+                                                loader={generateUrl}
+                                            />
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className={styles.footer__socialIcon}>
-                                    <Image
-                                        src={facebook}
-                                        layout="fill"
-                                        loader={generateUrl}
-                                    />
+                                    <Link
+                                        href="https://www.linkedin.com/in/vadym-maslovskyi/"
+                                        passHref
+                                    >
+                                        <a target="_blank">
+                                            <Image
+                                                src={facebook}
+                                                layout="fill"
+                                                loader={generateUrl}
+                                            />
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className={styles.footer__socialIcon}>
-                                    <Image
-                                        src={linkedin}
-                                        layout="fill"
-                                        loader={generateUrl}
-                                    />
+                                    <Link
+                                        href="https://www.linkedin.com/in/vadym-maslovskyi/"
+                                        passHref
+                                    >
+                                        <a target="_blank">
+                                            <Image
+                                                src={linkedin}
+                                                layout="fill"
+                                                loader={generateUrl}
+                                            />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
